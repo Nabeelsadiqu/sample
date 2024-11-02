@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartment Listings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Find Your Perfect Apartment</h1>
+        <p>Discover the best places to live with us.</p>
+    </header>
+
+    <!-- Featured Apartments Section -->
+    <section id="featured">
+        <h2>Featured Apartments</h2>
+        <div class="apartment-list">
+            <div class="apartment">
+                <img src="apartment1.jpg" alt="Apartment 1">
+                <h3>Modern Studio</h3>
+                <p>1 Bed • 1 Bath • Downtown</p>
+                <button onclick="showDetails(1)">View Details</button>
+            </div>
+            <div class="apartment">
+                <img src="apartment2.jpg" alt="Apartment 2">
+                <h3>Luxury Loft</h3>
+                <p>2 Bed • 2 Bath • Uptown</p>
+                <button onclick="showDetails(2)">Viewg Details</button>
+            </div>
+            <!-- More apartments can be added here -->
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Messaged 11:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+        <p id="formResponse"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
